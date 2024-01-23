@@ -94,11 +94,24 @@
         background: #ff4240;
         color: #fff;
       }
-      .mid-align {
-        top: -50%;
-        left: -50%;
-        transform: translate(-50%, -50%);
-        background: ;
+      .my-card-body {
+        display: flex;
+    padding: 40px;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    color: #fff;
+    z-index: 999;
+      }
+      .my-card-body2 {
+        display: flex;
+        flex-direction: column;
+    justify-content: end;
+    padding: 40px;
+    gap: 0.5rem;
+    align-content: flex-end;
+    color: #fff;
+    z-index: 999;
       }
     </style>
   </head>
@@ -309,16 +322,42 @@
           <!-- Program Card Up -->
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 text-white">
             <!-- Card 1 -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full">
-              <figure><img src="images/hockey2.png" alt="Shoes" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
+              <div class="card w-full bg-base-100 shadow-xl image-full">
+                <figure><img class="w-full" src="images/hockey2.png" alt="Shoes" /></figure>
+                <div class="my-card-body space-y-5">
+                  <h2 class="lg:text-3xl text-xl font-extrabold">Junior Program</h2>
+                  <p class="lg:text-base text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions">
+                    <button class="my-button lg:my-button-lg">Register Now!</button>
+                  </div>
                 </div>
               </div>
-            </div>
+              <!-- Card 2 -->
+              <div class="card w-full bg-base-100 shadow-xl image-full fl">
+                <figure><img class="w-full" src="images/hockey3.png" alt="Shoes" /></figure>
+                <div class="my-card-body space-y-5">
+                  <h2 class="lg:text-3xl text-xl font-extrabold">Junior Program</h2>
+                  <p class="lg:text-base text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="">
+                    <button class="my-button lg:my-button-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+              <!-- Card 3 -->
+              <div class="card w-full bg-base-100 shadow-xl image-full">
+                <figure><img class="w-full" src="images/hockey4.png" alt="Shoes" /></figure>
+                <div class="my-card-body2 items-baseline space-y-5">
+                  <h2 class="lg:text-3xl text-xl font-extrabold">Junior Program</h2>
+                  <p class="lg:text-base text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br> enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions">
+                    <button class="my-button lg:my-button-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
 
